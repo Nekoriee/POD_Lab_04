@@ -2,7 +2,7 @@
 #include <omp.h> //MSVC: /openmp, gcc: -fopenmp
 #include <thread>
 
-static unsigned thread_num = std::thread::hardware_concurrency();
+static unsigned thread_num = 1;
 
 EXTERN_C void set_num_threads(unsigned T)
 {
